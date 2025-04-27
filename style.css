@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center; /* Centers the h1 text */
+}
+
+/* Banner with Logos */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+    background: url('images/imagebg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Logo Container - Positioned Slightly Higher */
+.logo-container {
+    position: absolute;
+    top: 575px; /* Moved a little up */
+    left: 20px; /* Keep logo closer to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Main Horizontal Rectangle Logo */
+.main-logo {
+    width: 450px; /* Adjusted width for a horizontal rectangle */
+    height: 170px; /* Smaller height for horizontal rectangle */
+    background: url('images/bg.png') no-repeat center center; /* Use bg.png for the background */
+    background-size: cover; /* Ensure the background image scales properly */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Smaller Overlay Logo Positioned Above */
+.overlay-logo {
+    width: 60px; /* Smaller size for the overlay logo */
+    height: 60px; /* Smaller size for the overlay logo */
+    position: absolute;
+    top: -200px; /* Adjusted position to move it higher */
+    left: 130px; /* Moved a little to the left */
+    background: url('images/overlay-logo.png') no-repeat center center; /* Image inside the overlay logo */
+    background-size: cover; /* Ensure the image zooms and fits the circle */
+    border-radius: 50%; /* Make the overlay logo circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow to the circular overlay logo */
+}
+
+/* Navigation */
+nav {
+    background: #003366;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: #0055aa;
+}
+
+/* About Section */
+.about {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
